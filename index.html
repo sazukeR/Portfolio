@@ -1,59 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MyPortfolio</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Inter:wght@200;300;400;500;600&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/86cc835e69.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <div class="navi container">
-                <div class="logo">
-                    <figure>
-                        <img src="assets/bw.png" alt="sasukeR">
-                        <figcaption>sasukeR</figcaption>
-                    </figure>
-                </div>
-                <nav class="panel">
-                    <a href="#">Home</a>
-                    <a href="/about-me.html">About</a>
-                    <a href="/projects.html">Portfolio</a>
-                    <a href="#">Contact Me</a>
-                </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Inter:wght@200;300;400;500;600&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/86cc835e69.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navi container">
+            <div class="logo">
+                <figure>
+                    <img src="assets/bw.png" alt="sasukeR">
+                    <figcaption>sasukeR</figcaption>
+                </figure>
             </div>
-        </header>
-        <button class="menu-btn hamburger hamburger--spring" type="button">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-        </button>
-        <section class="front-page">
-            <div class="meet container">
-                <div class="hello">
-                    <h1 class="name-h1">Reinaldo Contreras</h1>
-                    <h1 class="hello-h1">Hello, I am a Frontend Developer</h1>
-                    <p>I’m a passionate web developer with 3 years of experience in creating attractive and high-performance web solutions in a responsible and efficient manner, with the goal of providing a unique and satisfying user experience. </p>
-                    <button>Let’s talk with me</button>
-                </div>
-                <div class="avatar">
-                    <img src="assets/avatar-nobg.png" alt="avatar">
-                </div>
+            <nav class="panel">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <button class="menu-btn" type="button">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark none"></i>
+    </button>
+    <section class="front-page">
+        <div class="meet container">
+            <div class="hello">
+                <h1 class="name-h1">Reinaldo Contreras</h1>
+                <h1 class="hello-h1">Hello, I am a Frontend Developer</h1>
+                <p>I’m a passionate web developer with 3 years of experience in creating attractive and high-performance web solutions in a responsible and efficient manner, with the goal of providing a unique and satisfying user experience. </p>
+                <button type="button">Let’s talk with me</button>
             </div>
-            <div class="social container">
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
+            <div class="avatar">
+                <img src="assets/avatar-nobg.png" alt="avatar">
+            </div>
+        </div>
+        <ul class="social">
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+    </section>
+    <main>
+        <section class="about-me">
+            <h3>About Me</h3>
+            <div>
+                <p>Hi, my name is Reinaldo Contreras, and I am a passionate web developer originally from Venezuela, but currently living in Peru for the past 3 years. I specialize in web development and have experience using technologies such as <button class="info-btn" type="button">show more</button></p>
+            </div>
+            <div class="more-info">
+                <div class="tools">
+                    <div class="tool-icon"><i class="fa-brands fa-square-js"></i></div>
+                    <div class="tool-icon"><i class="fa-brands fa-react"></i></div>
+                    <div class="tool-icon"><i class="fa-brands fa-node-js"></i></div>
+                    <div class="tool-icon"><i class="fa-brands fa-github"></i></div>
+                    <div class="tool-icon"><i class="fa-brands fa-figma"></i></div>
+                </div>
+                <p>I love working on exciting and challenging projects, and I'm always looking for ways to improve my skills and knowledge. I'm a curious person, always learning and trying to stay up-to-date with the latest trends in web development.<br><br>
+    
+                    In addition to my technical skills, I'm also a responsible and committed person in my work, especially when it comes to working remotely. I enjoy working in teams and I believe that good communication is key to achieving success in any project.<br><br>
+                        
+                    In my free time, I enjoy music, movies, and traveling to learn about new cultures and experiences. I'm excited to share my projects and knowledge in my portfolio, and I'm available to collaborate on interesting projects. If you want to know more about me or just want to chat, don't hesitate to get in touch!<button class="info-btn info-btn-inactive" type="button">show less</button>
+                </p>
             </div>
         </section>
+        <section class="platforms">
+            <h3>Platforms</h3>
+            <div class="container-platforms">
+                <div>
+                    <h6><i class="fa-regular fa-envelope"></i> Email</h6>
+                    <span>reinaldojcg1@gmail.com</span>
+                </div>
+                <div>
+                    <h6><i class="fa-brands fa-twitter"></i> Twitter</h6>
+                    <span>https://twitter.com/reinaldojcg1</span>
+                </div>
+                <div>
+                    <h6><i class="fa-brands fa-github"></i> GitHub</h6>
+                    <span>https://github.com/sazukeR/sazukeR</span>
+                </div>
+                <div>
+                    <h6><i class="fa-brands fa-linkedin"></i> LinkedIn</h6>
+                    <span>https://www.linkedin.com/in/reinaldo-jesus-contreras-4394041a2/</span>
+                </div>
+                <div>
+                    <h6><i class="fa-brands fa-codepen"></i> CodePen</h6>
+                    <span>https://codepen.io/reinaldojcg1</span>
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+                <h3>Projects</h3>
+                <div class="container-projects">
+                    <a href="#code-1">
+                        <figure>
+                            <img src="/assets/code1.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur. Mi sit urna at rutrum. Duis aliquam eu adipiscing leo hendrerit. Et volutpat lectus turpis leo adipiscing purus pulvinar proin </p>
+                        </figure>
+                    </a>
+                    <a href="#code-2">
+                        <figure>
+                            <img src="/assets/code2.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur. Mi sit urna at rutrum. Duis aliquam eu adipiscing leo hendrerit. Et volutpat lectus turpis leo adipiscing purus pulvinar proin </p>
+                        </figure>
+                    </a>
+                    <a href="#code-3">
+                        <figure>
+                            <img src="/assets/code3.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur. Mi sit urna at rutrum. Duis aliquam eu adipiscing leo hendrerit. Et volutpat lectus turpis leo adipiscing purus pulvinar proin </p>
+                        </figure>
+                    </a>
+                </div>
+        </section>
+        <article class="modal" id="code-1">
+            <div class="modal-content">
+                <a href="#close" class="modal-close">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </a>
+                <article class="portfolio-modal">
+                    <img src="assets/code1.jpg" alt="code1">
+                    <div class="portfolio-info">
+                        <h4>NOMBRE DEL PROYECTO 1</h4>
+                        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam esse dicta sunt doloribus voluptas magni, culpa iste cum quo. Consequatur.</P>
+                        <aside class="portfolio-details">
+                            <small><b>CLIENTE</b></small>
+                            <small>nombre del cliente</small>
+                            <small><b>FECHA</b></small>
+                            <small>28-11-91</small>
+                            <small><b>TIPO</b></small>
+                            <small>tipo de proyecto</small>
+                            <small><b>ENLACE</b></small>
+                            <small><a href="https//proyecto.com" target="_blank" rel="noopener">http//fsdfdfsdfsdfsdf.com</a></small>
+                        </aside>
+                    </div>
+                </article>
+            </div>
+        </article>
+        <article class="modal" id="code-2">
+            <div class="modal-content">
+                <a href="#close" class="modal-close">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </a>
+                <article class="portfolio-modal">
+                    <img src="assets/code2.jpg" alt="code2">
+                    <div class="portfolio-info">
+                        <h4>NOMBRE DEL PROYECTO 2</h4>
+                        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam esse dicta sunt doloribus voluptas magni, culpa iste cum quo. Consequatur.</P>
+                        <aside class="portfolio-details">
+                            <small><b>CLIENTE</b></small>
+                            <small>nombre del cliente</small>
+                            <small><b>FECHA</b></small>
+                            <small>28-11-91</small>
+                            <small><b>TIPO</b></small>
+                            <small>tipo de proyecto</small>
+                            <small><b>ENLACE</b></small>
+                            <small><a href="https//proyecto.com" target="_blank" rel="noopener">http//fsdfdfsdfsdfsdf.com</a></small>
+                        </aside>
+                    </div>
+                </article>
+            </div>
+        </article>
+        <article class="modal" id="code-3">
+            <div class="modal-content">
+                <a href="#close" class="modal-close">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </a>
+                <article class="portfolio-modal">
+                    <img src="assets/code3.jpg" alt="code3">
+                    <div class="portfolio-info">
+                        <h4>NOMBRE DEL PROYECTO 3</h4>
+                        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam esse dicta sunt doloribus voluptas magni, culpa iste cum quo. Consequatur.</P>
+                        <aside class="portfolio-details">
+                            <small><b>CLIENTE</b></small>
+                            <small>nombre del cliente</small>
+                            <small><b>FECHA</b></small>
+                            <small>28-11-91</small>
+                            <small><b>TIPO</b></small>
+                            <small>tipo de proyecto</small>
+                            <small><b>ENLACE</b></small>
+                            <small><a href="htt ps//proyecto.com" target="_blank" rel="noopener">http//fsdfdfsdfsdfsdf.com</a></small>
+                        </aside>
+                    </div>
+                </article>
+            </div>
+        </article>
+    </main>
 </body>
 </html>
